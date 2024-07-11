@@ -1,10 +1,10 @@
 # Copyright 1999-2020 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
 MY_COMMIT="f700dd2b6af1f0c93b6b1eb1d75e658783f848e2"
-PYTHON_COMPAT=( python3_{4,5,6,7,8} )
+PYTHON_COMPAT=( python3_{4,5,6,7,8,9,10,11,12} )
 
 inherit python-single-r1
 

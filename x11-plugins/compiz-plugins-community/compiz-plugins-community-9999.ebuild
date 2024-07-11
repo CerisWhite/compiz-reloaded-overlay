@@ -1,9 +1,9 @@
 # Copyright 1999-2020 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
-inherit autotools eutils git-r3 gnome2-utils
+inherit autotools git-r3 gnome2-utils
 
 DESCRIPTION="Compiz Window Manager: Community Plugins"
 HOMEPAGE="https://wiki.gentoo.org/wiki/No_homepage"

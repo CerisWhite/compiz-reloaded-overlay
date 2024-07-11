@@ -1,9 +1,9 @@
 # Copyright 1999-2020 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
-PYTHON_COMPAT=( python3_{4,5,6,7,8} )
+PYTHON_COMPAT=( python3_{4,5,6,7,8,9,10,11,12} )
 DISTUTILS_IN_SOURCE_BUILD=1
 DISTUTILS_SINGLE_IMPL=1
 inherit distutils-r1 gnome2-utils
@@ -35,8 +35,8 @@ RDEPEND="
 	<x11-misc/ccsm-0.9
 "
 
-python_configure_all() {
-	mydistutilsargs=(
+src_configure() {
+	DISTUTILS_ARGS=(
 		build
 		"--prefix=/usr"
 		"--with-gtk=$(usex gtk3 3.0 2.0)"
